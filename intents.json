@@ -1,0 +1,452 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "good afternoon", "namaste", "hii", "helo", "hiya", "yo", "hello there", "hi bot", "hey bot"],
+      "responses": ["Hello! I am your English learning buddy. Type 'help' to see what I can do."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "exit", "quit", "good bye", "see you later", "take care", "bye bye", "gtg", "i am leaving now"],
+      "responses": ["Goodbye! Keep practising your English every day. See you soon!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks", "thank you so much", "thanks a lot", "thank you very much", "thanks buddy", "much appreciated"],
+      "responses": ["You are welcome! Keep learning."]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": ["how are you", "how are you doing", "what's up", "how is it going", "how do you feel", "are you okay"],
+      "responses": ["I am just a program, but I am ready to help you learn English!"]
+    },
+    {
+      "tag": "help",
+      "patterns": ["help", "what can you do", "commands", "menu", "options", "how do i use you", "instructions"],
+      "responses": [
+        "Here is what I can do:\n1. Chat with greetings\n2. Tell you the meaning of a word -> type: meaning <word>\n3. Tell you the Hindi meaning of a word -> type: hindi <word>\n4. Explain basic grammar -> type: grammar <topic> (e.g. grammar tense)\n5. Start a quiz -> type: quiz\n6. Type 'bye' to exit"
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": ["who are you", "what is your name", "what are you", "are you a robot", "are you human"],
+      "responses": ["I am a simple English learning chatbot built with Python, NLTK and scikit-learn."]
+    },
+    {
+      "tag": "compliment",
+      "patterns": ["you are great", "good job", "nice bot", "you are helpful", "well done bot", "you are smart", "you are amazing"],
+      "responses": ["Thank you! I am glad I could help. Keep up your great learning!"]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["tell me a joke", "make me laugh", "say something funny", "tell a joke"],
+      "responses": [
+        "Why did the student eat his homework? Because the teacher said it was a piece of cake!",
+        "What is the longest word in English? 'Smiles' — because there is a mile between the two S's!"
+      ]
+    },
+    {
+      "tag": "encouragement",
+      "patterns": ["i am not good at english", "english is hard", "i cannot speak english well", "i am weak in english", "i always make mistakes in english", "i am scared to speak english"],
+      "responses": [
+        "Don't worry! Every expert was once a beginner. Practise a little every day and you will improve. Try typing 'quiz' to practise right now!"
+      ]
+    },
+    {
+      "tag": "congratulations",
+      "patterns": ["i passed my exam", "i got good marks", "i won a prize", "i did well in the test"],
+      "responses": ["Congratulations! Your hard work is paying off. Keep it up!"]
+    },
+    {
+      "tag": "apology",
+      "patterns": ["sorry", "my mistake", "i made an error", "i am sorry"],
+      "responses": ["No problem at all! Making mistakes is a normal part of learning."]
+    },
+    {
+      "tag": "boredom",
+      "patterns": ["i am bored", "this is boring", "i have nothing to do", "i am tired of studying"],
+      "responses": ["Let's make it fun! Type 'quiz' to test your English skills, or ask me the 'meaning' of a new word."]
+    },
+    {
+      "tag": "tips",
+      "patterns": ["how to improve my english", "tips to learn english", "how can i speak english fluently", "how do i get better at english"],
+      "responses": [
+        "A few simple tips:\n1. Read a little English every day (even one page)\n2. Practise speaking out loud, even alone\n3. Learn 2-3 new words daily and use them in sentences\n4. Don't be afraid of mistakes — they help you learn\n5. Try the 'quiz' command here regularly!"
+      ]
+    }
+  ],
+
+  "vocabulary": [
+    {"word": "happy", "meaning": "feeling or showing pleasure and joy", "hindi": "khush (खुश)"},
+    {"word": "sad", "meaning": "feeling unhappy or sorrowful", "hindi": "dukhi (दुखी)"},
+    {"word": "angry", "meaning": "feeling strong displeasure", "hindi": "gussa (गुस्सा)"},
+    {"word": "beautiful", "meaning": "pleasing to look at; attractive", "hindi": "sundar (सुंदर)"},
+    {"word": "school", "meaning": "a place where children go to study", "hindi": "vidyalaya (विद्यालय)"},
+    {"word": "friend", "meaning": "a person you like and trust", "hindi": "dost (दोस्त)"},
+    {"word": "family", "meaning": "a group of people related to each other, like parents and children", "hindi": "parivar (परिवार)"},
+    {"word": "mother", "meaning": "a female parent", "hindi": "maa (माँ)"},
+    {"word": "father", "meaning": "a male parent", "hindi": "pita (पिता)"},
+    {"word": "brother", "meaning": "a male sibling", "hindi": "bhai (भाई)"},
+    {"word": "sister", "meaning": "a female sibling", "hindi": "behan (बहन)"},
+    {"word": "water", "meaning": "a clear liquid that we drink", "hindi": "paani (पानी)"},
+    {"word": "food", "meaning": "what we eat to stay alive and healthy", "hindi": "khana (खाना)"},
+    {"word": "book", "meaning": "a set of printed pages used for reading", "hindi": "kitaab (किताब)"},
+    {"word": "pen", "meaning": "a tool used for writing with ink", "hindi": "kalam (कलम)"},
+    {"word": "pencil", "meaning": "a tool used for writing or drawing", "hindi": "pencil (पेंसिल)"},
+    {"word": "teacher", "meaning": "a person who helps students learn", "hindi": "shikshak (शिक्षक)"},
+    {"word": "student", "meaning": "a person who is studying at a school", "hindi": "chhatra (छात्र)"},
+    {"word": "village", "meaning": "a small group of houses in a rural area", "hindi": "gaon (गाँव)"},
+    {"word": "city", "meaning": "a large town where many people live", "hindi": "shahar (शहर)"},
+    {"word": "farmer", "meaning": "a person who grows crops or keeps animals", "hindi": "kisan (किसान)"},
+    {"word": "rain", "meaning": "water falling from clouds in the sky", "hindi": "baarish (बारिश)"},
+    {"word": "sun", "meaning": "the star that gives us light and heat in the day", "hindi": "sooraj (सूरज)"},
+    {"word": "moon", "meaning": "the object seen in the sky at night", "hindi": "chaand (चाँद)"},
+    {"word": "star", "meaning": "a small bright light seen in the night sky", "hindi": "taara (तारा)"},
+    {"word": "sky", "meaning": "the space above the earth we see from the ground", "hindi": "aakash (आकाश)"},
+    {"word": "tree", "meaning": "a tall plant with a trunk, branches and leaves", "hindi": "ped (पेड़)"},
+    {"word": "flower", "meaning": "the colourful part of a plant that often smells nice", "hindi": "phool (फूल)"},
+    {"word": "river", "meaning": "a large natural stream of water", "hindi": "nadi (नदी)"},
+    {"word": "mountain", "meaning": "a very high hill", "hindi": "pahad (पहाड़)"},
+    {"word": "animal", "meaning": "a living creature that is not a plant", "hindi": "janwar (जानवर)"},
+    {"word": "dog", "meaning": "a common pet animal that barks", "hindi": "kutta (कुत्ता)"},
+    {"word": "cat", "meaning": "a small pet animal that says meow", "hindi": "billi (बिल्ली)"},
+    {"word": "cow", "meaning": "a farm animal that gives milk", "hindi": "gaay (गाय)"},
+    {"word": "bird", "meaning": "an animal with feathers and wings that can usually fly", "hindi": "chidiya (चिड़िया)"},
+    {"word": "fish", "meaning": "an animal that lives and swims in water", "hindi": "machhli (मछली)"},
+    {"word": "house", "meaning": "a building where people live", "hindi": "ghar (घर)"},
+    {"word": "door", "meaning": "a movable barrier used to open or close an entrance", "hindi": "darwaza (दरवाज़ा)"},
+    {"word": "window", "meaning": "an opening in a wall that lets in light and air", "hindi": "khidki (खिड़की)"},
+    {"word": "road", "meaning": "a path made for people or vehicles to travel on", "hindi": "sadak (सड़क)"},
+    {"word": "market", "meaning": "a place where goods are bought and sold", "hindi": "bazaar (बाज़ार)"},
+    {"word": "money", "meaning": "coins or notes used to buy things", "hindi": "paisa (पैसा)"},
+    {"word": "work", "meaning": "an activity done using effort to achieve a result", "hindi": "kaam (काम)"},
+    {"word": "play", "meaning": "to do something enjoyable, especially a game", "hindi": "khel (खेल)"},
+    {"word": "run", "meaning": "to move quickly using your legs", "hindi": "daudna (दौड़ना)"},
+    {"word": "walk", "meaning": "to move by putting one foot in front of the other", "hindi": "chalna (चलना)"},
+    {"word": "eat", "meaning": "to put food in your mouth and swallow it", "hindi": "khana (खाना)"},
+    {"word": "sleep", "meaning": "to rest with your eyes closed at night", "hindi": "sona (सोना)"},
+    {"word": "read", "meaning": "to look at and understand written words", "hindi": "padhna (पढ़ना)"},
+    {"word": "write", "meaning": "to make letters or words on paper", "hindi": "likhna (लिखना)"},
+    {"word": "speak", "meaning": "to say words out loud", "hindi": "bolna (बोलना)"},
+    {"word": "listen", "meaning": "to pay attention to sound", "hindi": "sunna (सुनना)"},
+    {"word": "see", "meaning": "to notice something with your eyes", "hindi": "dekhna (देखना)"},
+    {"word": "big", "meaning": "large in size", "hindi": "bada (बड़ा)"},
+    {"word": "small", "meaning": "little in size", "hindi": "chhota (छोटा)"},
+    {"word": "good", "meaning": "of high quality; pleasant", "hindi": "achha (अच्छा)"},
+    {"word": "bad", "meaning": "not good; unpleasant", "hindi": "bura (बुरा)"},
+    {"word": "hot", "meaning": "having a high temperature", "hindi": "garam (गरम)"},
+    {"word": "cold", "meaning": "having a low temperature", "hindi": "thanda (ठंडा)"},
+    {"word": "new", "meaning": "not existing before; recently made", "hindi": "naya (नया)"},
+    {"word": "old", "meaning": "having existed for a long time", "hindi": "purana (पुराना)"},
+    {"word": "fast", "meaning": "moving quickly", "hindi": "tez (तेज़)"},
+    {"word": "slow", "meaning": "moving without much speed", "hindi": "dheema (धीमा)"},
+    {"word": "clean", "meaning": "free from dirt", "hindi": "saaf (साफ़)"},
+    {"word": "dirty", "meaning": "marked with dirt", "hindi": "ganda (गंदा)"},
+    {"word": "morning", "meaning": "the early part of the day", "hindi": "subah (सुबह)"},
+    {"word": "night", "meaning": "the time when it is dark outside", "hindi": "raat (रात)"},
+    {"word": "today", "meaning": "this present day", "hindi": "aaj (आज)"},
+    {"word": "tomorrow", "meaning": "the day after today", "hindi": "kal (कल)"},
+    {"word": "yesterday", "meaning": "the day before today", "hindi": "beeta kal (बीता कल)"},
+    {"word": "abandon", "meaning": "to cease to support or look after someone; to desert", "hindi": "tyaagna (त्यागना)"},
+    {"word": "ability", "meaning": "possession of the means or skill to do something", "hindi": "kshmata (क्षमता)"},
+    {"word": "able", "meaning": "having the power, skill, or time to do something", "hindi": "saksham (सक्षम)"},
+    {"word": "aboard", "meaning": "on or into a ship, aircraft, train, or other vehicle", "hindi": "sawaar (सवार)"},
+    {"word": "absolute", "meaning": "total and complete", "hindi": "sampurna (संपूर्ण)"},
+    {"word": "absorb", "meaning": "take in or soak up energy, liquid, or other substances", "hindi": "sookhna (सोखना)"},
+    {"word": "abstract", "meaning": "existing in thought or as an idea but not having a physical reality", "hindi": "amurt (अमूर्त)"},
+    {"word": "absurd", "meaning": "wildly unreasonable, illogical, or inappropriate", "hindi": "बेतुका (betuka)"},
+    {"word": "abundance", "meaning": "a very large quantity of something", "hindi": "prachurata (प्रचुरता)"},
+    {"word": "abuse", "meaning": "use something to bad effect or for a bad purpose", "hindi": "durupyog (दुरूपयोग)"},
+    {"word": "academic", "meaning": "relating to education and scholarship", "hindi": "shaikshik (शैक्षिक)"},
+    {"word": "accelerate", "meaning": "begin to move more quickly", "hindi": "tezi lana (तेजी लाना)"},
+    {"word": "accent", "meaning": "a distinctive way of pronouncing a language", "hindi": "lehza (लहजा)"},
+    {"word": "accept", "meaning": "consent to receive or undertake something offered", "hindi": "sweekaar karna (स्वीकार करना)"},
+    {"word": "access", "meaning": "the means or opportunity to approach or enter a place", "hindi": "pahunch (पहुंच)"},
+    {"word": "accident", "meaning": "an unfortunate incident that happens unexpectedly", "hindi": "durghatna (दुर्घटना)"},
+    {"word": "accompany", "meaning": "go somewhere with someone as a companion or escort", "hindi": "saath chalna (साथ चलना)"},
+    {"word": "accomplish", "meaning": "achieve or complete successfully", "hindi": "poora karna (पूरा करना)"},
+    {"word": "according", "meaning": "as stated or indicated by", "hindi": "anusar (अनुसार)"},
+    {"word": "account", "meaning": "a report or description of an event or experience", "hindi": "vivaran (विवरण)"},
+    {"word": "accurate", "meaning": "correct in all details; exact", "hindi": "sateek (सटीक)"},
+    {"word": "accuse", "meaning": "claim that someone has done something wrong", "hindi": "aarop lagana (आरोप लगाना)"},
+    {"word": "achieve", "meaning": "successfully bring about or reach a desired objective", "hindi": "haasil karna (हासिल करना)"},
+    {"word": "acid", "meaning": "a chemical substance with a pH below 7", "hindi": "aml (अम्ल)"},
+    {"word": "acknowledge", "meaning": "accept or admit the existence or truth of", "hindi": "स्वीकार करना (swikaar karna)"},
+    {"word": "acquire", "meaning": "buy or obtain an asset or object for oneself", "hindi": "प्राप्त करना (praapt karna)"},
+    {"word": "across", "meaning": "from one side to the other of something", "hindi": "aar-paar (आर-पार)"},
+    {"word": "act", "meaning": "take action; do something", "hindi": "karya karna (कार्य करना)"},
+    {"word": "action", "meaning": "the fact or process of doing something", "hindi": "karwahi (कारवाई)"},
+    {"word": "active", "meaning": "engaged in action; busy", "hindi": "sakriy (सक्रिय)"},
+    {"word": "actor", "meaning": "a person whose profession is acting on the stage, in movies, or on television", "hindi": "abhineta (अभिनेता)"},
+    {"word": "actual", "meaning": "existing in fact; real", "hindi": "vastavik (वास्तविक)"},
+    {"word": "adapt", "meaning": "adjust to new conditions", "hindi": "anukul banana (अनुकूल बनाना)"},
+    {"word": "add", "meaning": "join something to something else so as to increase the size, number, or amount", "hindi": "jodna (जोड़ना)"},
+    {"word": "addition", "meaning": "the action or process of adding something to something else", "hindi": "jod (जोड़)"},
+    {"word": "address", "meaning": "the particulars of the place where someone lives or an organization is located", "hindi": "pata (पत्ता)"},
+    {"word": "adequate", "meaning": "satisfactory or acceptable in quality or quantity", "hindi": "paryaapt (पर्याप्त)"},
+    {"word": "adjust", "meaning": "alter or move something slightly to achieve a desired fit, appearance, or result", "hindi": "vyavasthit karna (व्यवस्थित करना)"},
+    {"word": "administration", "meaning": "the process or activity of running a business, organization, etc.", "hindi": "prashashan (प्रशासन)"},
+    {"word": "admire", "meaning": "regard with respect or warm approval", "hindi": "prashansa karna (प्रशंसा करना)"},
+    {"word": "admission", "meaning": "the statement or assertion that something is true", "hindi": "pravesh (प्रवेश)"},
+    {"word": "admit", "meaning": "confess to be true or to be the case", "hindi": "swikaar karna (स्वीकार करना)"},
+    {"word": "adolescent", "meaning": "in the process of developing from a child into an adult", "hindi": "kishor (किशोरावस्था)"},
+    {"word": "adopt", "meaning": "legally take another's child and bring it up as one's own", "hindi": "god lena (गोद लेना)"},
+    {"word": "adult", "meaning": "a person who is fully grown or developed", "hindi": "vayask (वयस्क)"},
+    {"word": "advance", "meaning": "move forward in a tactical way", "hindi": "aage badhana (आगे बढ़ाना)"},
+    {"word": "advantage", "meaning": "a condition or circumstance that puts one in a favorable or superior position", "hindi": "laabh (लाभ)"},
+    {"word": "adventure", "meaning": "an unusual and exciting, typically hazardous, experience or activity", "hindi": "sahasik karya (साहसिक कार्य)"},
+    {"word": "advertise", "meaning": "draw attention to something or promote a product or service", "hindi": "vigyapan karna (विज्ञापन करना)"},
+    {"word": "advice", "meaning": "guidance or recommendations offered with regard to prudent future action", "hindi": "salaah (सलाह)"},
+    {"word": "advise", "meaning": "offer suggestions about the best course of action to someone", "hindi": "salah dena (सलाह देना)"},
+    {"word": "affair", "meaning": "an event or sequence of events of a specified kind or that has previously been referred to", "hindi": "mamla (मामला)"},
+    {"word": "affect", "meaning": "have an effect on; make a difference to", "hindi": "prabhavit karna (प्रभावित करना)"},
+    {"word": "afford", "meaning": "have enough money to pay for something", "hindi": "samarth hona (समर्थ होना)"},
+    {"word": "afraid", "meaning": "feeling fearful or anxious", "hindi": "dara hua (डरा हुआ)"},
+    {"word": "after", "meaning": "in the time following (an event or another period of time)", "hindi": "ke baad (के बाद)"},
+    {"word": "afternoon", "meaning": "the time from noon or lunchtime to evening", "hindi": "dopahar (दोपहर)"},
+    {"word": "again", "meaning": "fir se", "hindi": "fir se (फिर से)"},
+    {"word": "against", "meaning": "in opposition to", "hindi": "ke khilaf (के खिलाफ)"},
+    {"word": "age", "meaning": "the length of time that a person has lived or a thing has existed", "hindi": "ayu (आयु)"},
+    {"word": "agency", "meaning": "a business or organization providing a particular service on behalf of another", "hindi": "agency (एजेंसी)"},
+    {"word": "agenda", "meaning": "a list of items to be discussed at a formal meeting", "hindi": "karyasuchi (कार्यसूची)"},
+    {"word": "agent", "meaning": "a person who acts on behalf of another person or group", "hindi": "pratinidhi (प्रतिनिधि)"},
+    {"word": "aggressive", "meaning": "ready or likely to attack or confront", "hindi": "aakramak (आक्रामक)"},
+    {"word": "ago", "meaning": "before the present; earlier", "hindi": "pehle (पहले)"},
+    {"word": "agree", "meaning": "have the same opinion about something", "hindi": "sahamat hona (सहमत होना)"},
+    {"word": "agreement", "meaning": "achieved harmony or accord", "hindi": "samjhauta (समझौता)"},
+    {"word": "agricultural", "meaning": "relating to agriculture", "hindi": "krishi sambandhi (कृषि संबंधी)"},
+    {"word": "ahead", "meaning": "further forward in space or time", "hindi": "aage (आगे)"},
+    {"word": "aid", "meaning": "help, typically of a practical nature", "hindi": "sahayata (सहायता)"},
+    {"word": "aim", "meaning": "have the intention of achieving", "hindi": "lakshya (लक्ष्य)"},
+    {"word": "air", "meaning": "the invisible mixture of gases surrounding the earth", "hindi": "hawa (हवा)"},
+    {"word": "aircraft", "meaning": "an aeroplane, helicopter, or other machine capable of flight", "hindi": "vimaan (विमान)"},
+    {"word": "airline", "meaning": "an organization providing a regular public service of air transport", "hindi": "viman seva (विमान सेवा)"},
+    {"word": "airport", "meaning": "a complex of runways and buildings for the take-off, landing, and maintenance of civil aircraft", "hindi": "vimanakshetr (विमानक्षेत्र)"},
+    {"word": "alarm", "meaning": "an anxious awareness of danger", "hindi": "chetawani (चेतावनी)"},
+    {"word": "alcohol", "meaning": "a colorless liquid produced by the fermentation of sugars", "hindi": "sharab (शराब)"},
+    {"word": "alive", "meaning": "(of a person, animal, or plant) living, not dead", "hindi": "jeevit (जीवित)"},
+    {"word": "all", "meaning": "used to refer to the whole quantity or extent of a particular group or thing", "hindi": "sabhi (सभी)"},
+    {"word": "allow", "meaning": "give permission for someone to do something", "hindi": "anumati dena (अनुमति देना)"},
+    {"word": "almost", "meaning": "not quite; very nearly", "hindi": "lagbhag (लगभग)"},
+    {"word": "alone", "meaning": "having no one else present", "hindi": "akela (अकेला)"},
+    {"word": "along", "meaning": "moving in a constant direction on a path", "hindi": "saath (साथ)"},
+    {"word": "aloud", "meaning": "audibly; not silently or in a whisper", "hindi": "zor se (जोर से)"},
+    {"word": "alphabet", "meaning": "a set of letters or symbols in a fixed order", "hindi": "varnmala (वर्णमाला)"},
+    {"word": "already", "meaning": "before or by now or the time specified", "hindi": "pehle hi (पहले ही)"},
+    {"word": "also", "meaning": "in addition; too", "hindi": "bhi (भी)"},
+    {"word": "alter", "meaning": "change or cause to change in character or composition", "hindi": "badalna (बदलना)"},
+    {"word": "alternative", "meaning": "available as another possibility", "hindi": "vikalp (विकल्प)"},
+    {"word": "although", "meaning": "despite the fact that", "hindi": "halaanki (हालाँकि)"},
+    {"word": "always", "meaning": "at all times; on all occasions", "hindi": "hamesha (हमेशा)"},
+    {"word": "amaze", "meaning": "surprise (someone) greatly; fill with astonishment", "hindi": "achambhit karna (अचंभित करना)"},
+    {"word": "ambition", "meaning": "a strong desire to do or to achieve something", "hindi": "mahatwakanksha (महत्वाकांक्षा)"},
+    {"word": "ambulance", "meaning": "a vehicle equipped for taking sick or injured people to and from hospital", "hindi": "ambulance (एम्बुलेंस)"},
+    {"word": "among", "meaning": "surrounded by; in the middle of", "hindi": "ke beech (ke beech)"},
+    {"word": "amount", "meaning": "a quantity of something, especially the total of a thing or things", "hindi": "matra (मात्रा)"},
+    {"word": "amuse", "meaning": "provide (someone) with fluent or agreeable entertainment", "hindi": "manoranjan karna (मनोरंजन करना)"},
+    {"word": "analysis", "meaning": "detailed examination of the elements or structure of something", "hindi": "vishleshan (विश्लेषण)"},
+    {"word": "analyze", "meaning": "examine methodically and in detail the constitution or structure of", "hindi": "vishleshan karna (विश्लेषण करना)"},
+    {"word": "ancient", "meaning": "belonging to the very distant past", "hindi": "pracheen (प्राचीन)"},
+    {"word": "angel", "meaning": "a spiritual being believed to act as an attendant, agent, or messenger of God", "hindi": "devdoot (देवदूत)"},
+    {"word": "anger", "meaning": "a strong feeling of annoyance, displeasure, or hostility", "hindi": "krodh (क्रोध)"},
+    {"word": "angle", "meaning": "the space (measured in degrees) between two intersecting lines or surfaces", "hindi": "kon (कोण)"},
+    {"word": "angry", "meaning": "feeling or showing strong annoyance, displeasure, or hostility", "hindi": "gusse mein (गुस्से में)"},
+    {"word": "animal", "meaning": "a living organism that feeds on organic matter", "hindi": "prani (प्राणी)"},
+    {"word": "ankle", "meaning": "the joint connecting the foot with the leg", "hindi": "takhna (टखना)"},
+    {"word": "anniversary", "meaning": "the date on which an event took place in a previous year", "hindi": "varshgaanth (वर्षगांठ)"},
+    {"word": "announce", "meaning": "make a public and formal declaration", "hindi": "ghoshna karna (घोषणा करना)"},
+    {"word": "annual", "meaning": "occurring once every year", "hindi": "varshik (वार्षिक)"},
+    {"word": "another", "meaning": "used to refer to one more person or thing of the same kind", "hindi": "dusra (दूसरा)"},
+    {"word": "answer", "meaning": "a thing said, written, or done as a reaction to a question, statement, or situation", "hindi": "uttar (उत्तर)"},
+    {"word": "anticipate", "meaning": "regard as probable; expect or predict", "hindi": "purvanuman karna (पूर्वानुमान करना)"},
+    {"word": "anxiety", "meaning": "a feeling of worry, nervousness, or unease", "hindi": "chinta (चिंता)"},
+    {"word": "anxious", "meaning": "experiencing worry, unease, or nervousness", "hindi": "chintit (चिंतित)"},
+    {"word": "any", "meaning": "used to refer to one or some of a thing or number of things", "hindi": "koi (कोई)"},
+    {"word": "anybody", "meaning": "anyone; any person", "hindi": "koi bhi (कोई भी)"},
+    {"word": "anymore", "meaning": "any longer", "hindi": "ab aur nahi (अब और नहीं)"},
+    {"word": "anyone", "meaning": "any person", "hindi": "koyi bhi vyakti (कोई भी व्यक्ति)"},
+    {"word": "anything", "meaning": "used to refer to a thing, no matter what", "hindi": "kuchh bhi (कुछ भी)"},
+    {"word": "anyway", "meaning": "used to confirm or support a previous point", "hindi": "khair (खैर)"},
+    {"word": "anywhere", "meaning": "in or to any place", "hindi": "kahin bhi (कहीं भी)"},
+    {"word": "apart", "meaning": "separated by a distance", "hindi": "alag (अलग)"},
+    {"word": "apartment", "meaning": "a suite of rooms forming one residence", "hindi": "flat (फ्लैट)"},
+    {"word": "apologize", "meaning": "express regret for something that one has done wrong", "hindi": "kshama mangna (क्षमा मांगना)"},
+    {"word": "apparent", "meaning": "clearly visible or understood; obvious", "hindi": "spasht (स्पष्ट)"},
+    {"word": "appeal", "meaning": "make a serious or urgent request", "hindi": "apil (अपील)"},
+    {"word": "appear", "meaning": "come into sight; become noticeable", "hindi": "prateet hona (प्रतीत होना)"},
+    {"word": "appetite", "meaning": "a natural desire to satisfy a bodily need", "hindi": "bhookh (भूख)"},
+    {"word": "apple", "meaning": "the round fruit of a tree of the rose family", "hindi": "seb (सेब)"},
+    {"word": "application", "meaning": "a formal request to an authority for something", "hindi": "aavedan (आवेदन)"},
+    {"word": "apply", "meaning": "make a formal application or request", "hindi": "aavedan karna (आवेदन करना)"},
+    {"word": "appoint", "meaning": "assign a job or role to (someone)", "hindi": "niyukt karna (नियुक्त करना)"},
+    {"word": "appreciate", "meaning": "recognize the full worth of", "hindi": "sarahana karna (सराहना करना)"},
+    {"word": "approach", "meaning": "come near or nearer to", "hindi": "approach (दृष्टिकोण)"},
+    {"word": "appropriate", "meaning": "suitable or proper in the circumstances", "hindi": "uchit (उचित)"},
+    {"word": "approval", "meaning": "the official acceptance or approval of something", "hindi": "swikriti (स्वीकृति)"},
+    {"word": "approve", "meaning": "officially agree to or accept as satisfactory", "hindi": "anumodit karna (अनुमोदित करना)"},
+    {"word": "approximate", "meaning": "close to the actual, but not completely accurate or exact", "hindi": "lagbhag (लगभग)"},
+    {"word": "architect", "meaning": "a person who designs buildings and in many cases supervises their construction", "hindi": "vastukar (वास्तुकार)"},
+    {"word": "area", "meaning": "a region or part of a town, a country, or the world", "hindi": "kshetr (क्षेत्र)"},
+    {"word": "argue", "meaning": "give reasons or cite evidence in support of an idea, action, or theory", "hindi": "tark karna (तर्क करना)"},
+    {"word": "argument", "meaning": "an exchange of diverging or opposite views", "hindi": "bahes (बहस)"},
+    {"word": "arise", "meaning": "(of a problem, opportunity, or situation) emerge; become apparent", "hindi": "utpann hona (उत्पन्न होना)"},
+    {"word": "arm", "meaning": "the upper limb of the human body", "hindi": "bahu (बांह)"},
+    {"word": "army", "meaning": "an organized military force equipped for fighting on land", "hindi": "sena (सेना)"},
+    {"word": "around", "meaning": "located or situated on every side", "hindi": "charo or (चारों ओर)"},
+    {"word": "arrange", "meaning": "put (things) in a neat, attractive, or required order", "hindi": "vyavasthit karna (व्यवस्थित करना)"},
+    {"word": "arrest", "meaning": "seize (someone) by legal authority and take them into custody", "hindi": "giraftaar karna (गिरफ्तार करना)"},
+    {"word": "arrival", "meaning": "the action or process of arriving", "hindi": "aagman (आगमन)"},
+    {"word": "arrive", "meaning": "reach a destination", "hindi": "pahunchna (pahunchna)"},
+    {"word": "art", "meaning": "the expression or application of human creative skill and imagination", "hindi": "kala (कला)"},
+    {"word": "article", "meaning": "a piece of writing included in a newspaper, magazine, or other publication", "hindi": "lekh (लेख)"},
+    {"word": "artificial", "meaning": "made or produced by human beings rather than occurring naturally", "hindi": "kritrim (कृत्रिम)"},
+    {"word": "artist", "meaning": "a person who creates paintings or drawings as a profession or hobby", "hindi": "kalakar (कलाकार)"},
+    {"word": "ashamed", "meaning": "embarrassed or guilty because of one's actions, characteristics, or associations", "hindi": "sharminda (शर्मिंदा)"},
+    {"word": "aside", "meaning": "to one side; out of the way", "hindi": "ek taraf (एक तरफ)"},
+    {"word": "ask", "meaning": "say something in order to obtain information", "hindi": "puchhna (पूछना)"},
+    {"word": "asleep", "meaning": "in a state of sleep", "hindi": "soya hua (सोया हुआ)"}
+  ],
+
+  "quiz": [
+    {
+      "question": "Choose the correct past tense of 'go':",
+      "options": ["goed", "went", "gone", "going"],
+      "answer": "went"
+    },
+    {
+      "question": "Which word is a noun?",
+      "options": ["run", "quickly", "school", "happy"],
+      "answer": "school"
+    },
+    {
+      "question": "Fill in the blank: She ___ a book.",
+      "options": ["is reading", "reading is", "read is", "am reading"],
+      "answer": "is reading"
+    },
+    {
+      "question": "Choose the correct article: ___ apple a day keeps the doctor away.",
+      "options": ["A", "An", "The", "No article"],
+      "answer": "An"
+    },
+    {
+      "question": "What is the Hindi meaning of 'water'?",
+      "options": ["kitaab", "paani", "dost", "gaon"],
+      "answer": "paani"
+    },
+    {
+      "question": "Which word is an adjective?",
+      "options": ["beautiful", "run", "quickly", "school"],
+      "answer": "beautiful"
+    },
+    {
+      "question": "Choose the plural of 'child':",
+      "options": ["childs", "childes", "children", "child"],
+      "answer": "children"
+    },
+    {
+      "question": "Which word correctly completes: He ___ to school every day.",
+      "options": ["walk", "walks", "walking", "walked"],
+      "answer": "walks"
+    },
+    {
+      "question": "What is the Hindi meaning of 'friend'?",
+      "options": ["dost", "ghar", "kaam", "raat"],
+      "answer": "dost"
+    },
+    {
+      "question": "Choose the comparative form: This box is ___ than that one.",
+      "options": ["big", "bigger", "biggest", "more big"],
+      "answer": "bigger"
+    },
+    {
+      "question": "Which of these is a pronoun?",
+      "options": ["teacher", "she", "quickly", "beautiful"],
+      "answer": "she"
+    },
+    {
+      "question": "Which question word asks about a place?",
+      "options": ["Who", "Where", "When", "Why"],
+      "answer": "Where"
+    },
+    {
+      "question": "Fill in the blank: The cat is ___ the table.",
+      "options": ["on", "and", "but", "went"],
+      "answer": "on"
+    },
+    {
+      "question": "What is the opposite of 'hot'?",
+      "options": ["fast", "clean", "cold", "new"],
+      "answer": "cold"
+    },
+    {
+      "question": "Choose the correct sentence:",
+      "options": ["She go to school.", "She goes to school.", "She going to school.", "She gone to school."],
+      "answer": "She goes to school."
+    }
+  ],
+
+  "grammar": [
+    {
+      "topic": "tense",
+      "explanation": "Tense tells us WHEN an action happens.\n- Present tense: I eat rice.\n- Past tense: I ate rice.\n- Future tense: I will eat rice."
+    },
+    {
+      "topic": "noun",
+      "explanation": "A noun is the name of a person, place, animal or thing.\nExamples: teacher, village, dog, chair."
+    },
+    {
+      "topic": "verb",
+      "explanation": "A verb shows an action or a state of being.\nExamples: run, eat, is, was, study."
+    },
+    {
+      "topic": "adjective",
+      "explanation": "An adjective describes a noun.\nExample: a TALL tree, a BEAUTIFUL flower."
+    },
+    {
+      "topic": "adverb",
+      "explanation": "An adverb describes a verb, adjective, or another adverb, often telling HOW, WHEN, or WHERE something happens.\nExample: She sings BEAUTIFULLY. He runs FAST. They arrived YESTERDAY."
+    },
+    {
+      "topic": "pronoun",
+      "explanation": "A pronoun replaces a noun.\nExamples: he, style, it, they, we, I, you."
+    },
+    {
+      "topic": "preposition",
+      "explanation": "A preposition shows the relationship between a noun/pronoun and other words, often about place or time.\nExamples: The book is ON the table. She is IN the room. We will meet AT 5 o'clock."
+    },
+    {
+      "topic": "conjunction",
+      "explanation": "A conjunction joins words, phrases, or sentences together.\nExamples: and, but, or, because.\nShe likes tea AND coffee. I am tired BUT happy."
+    },
+    {
+      "topic": "article",
+      "explanation": "Articles are 'a', 'an', and 'the'.\nUse 'a' before consonant sounds (a dog), 'an' before vowel sounds (an apple), and 'the' for specific things (the sun)."
+    },
+    {
+      "topic": "singular_plural",
+      "explanation": "Singular means one thing, plural means more than one.\nExamples: one book -> two books, one child -> two children, one mouse -> two mice.\nMost nouns just add 's' or 'es', but some are irregular."
+    },
+    {
+      "topic": "question_words",
+      "explanation": "Question words help us ask for information.\n- What: asks about a thing\n- Who: asks about a person\n- Where: asks about a place\n- When: asks about time\n- Why: asks for a reason\n- How: asks about a manner or method"
+    },
+    {
+      "topic": "subject_verb_agreement",
+      "explanation": "The verb must match the subject in number.\n- Singular subject: He WALKS to school.\n- Plural subject: They WALK to school.\nRemember: singular subjects (he/she/it) usually take a verb ending in 's'."
+    },
+    {
+      "topic": "comparative_superlative",
+      "explanation": "We use comparatives to compare two things, and superlatives to compare three or more.\n- Comparative: This book is BIGGER than that one.\n- Superlative: This is the BIGGEST book in the class."
+    },
+    {
+      "topic": "punctuation",
+      "explanation": "Punctuation marks help make sentences clear.\n- Full stop (.) ends a sentence.\n- Question mark (?) ends a question.\n- Comma (,) separates items or ideas.\n- Exclamation mark (!) shows strong feeling."
+    }
+  ],
+
+  "fallback": [
+    "I am sorry, I did not understand that. Type 'help' to see what I can do.",
+    "I am still learning. Could you please rephrase your question?",
+    "Hmm, I do not have an answer for that yet. Try asking about vocabulary, grammar, or type 'quiz'."
+  ]
+}

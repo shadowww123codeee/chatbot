@@ -1,2 +1,5 @@
 nltk
 scikit-learn
+streamlit>=1.40
+google-genai
+gtts
